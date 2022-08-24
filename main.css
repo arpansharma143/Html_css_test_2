@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: helVetica_bold;
+  src: url("./Assests/Fonts/Helvetica\ Neue\ Bold.woff");
+}
+@font-face {
+  font-family: helVetica_medium;
+  src: url("./Assests/Fonts/Helvetica\ Neue\ Medium.eot");
+}
+@font-face {
+  font-family: kano_regular;
+  src: url("./Assests/Fonts/Kano\ regular\ Regular.woff");
+}
+
+/* upper header start  /////////////////////////////////*/
+
+header .upperHeader {
+  padding: 0 8%;
+  background-color: black;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .upperHeader .SelectOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .upperHeader .SelectOption span {
+  color: white;
+}
+
+header .upperHeader .SelectOption select {
+  background-color: black;
+  border: black solid 1px;
+  color: white;
+}
+
+header .upperHeader nav ul {
+  list-style: none;
+  display: flex;
+  font-family: kano_regular;
+  color: white;
+}
+
+header .upperHeader nav ul li {
+  margin: 0px 20px;
+}
+/* upper header end  /////////////////////////////////*/
+/* lower header start//////////////////////////////  */
+header .lowerHeader {
+  height: 90px;
+  padding: 0 108px 0 150px;
+}
+
+header .lowerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .lowerHeader h1 {
+  display: inline-block;
+  flex-grow: 1;
+  font-size: 25px;
+}
+
+header .lowerHeader h1::after {
+  content: "";
+  display: inline-block;
+  background-color: #0076ff;
+  width: 4px;
+  height: 4px;
+}
+
+header .lowerHeader nav {
+  flex-grow: 2.5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .lowerHeader nav .list {
+  flex-grow: 0.6;
+}
+
+header .lowerHeader nav ul {
+  font-family: kano_regular;
+  margin: 0 auto;
+  width: 400px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+}
+
+header .lowerHeader nav ul .latest {
+  position: relative;
+}
+
+header .lowerHeader nav ul .latest span {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 25% 25% 25% 25%;
+  font-size: 8px;
+  height: 16px;
+  padding: 5px;
+  transform: translate(-10px, -15px);
+}
+
+header .lowerHeader nav .searchAndSignin {
+  flex-basis: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .lowerHeader nav .searchAndSignin .Search {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+header .lowerHeader nav .searchAndSignin .Search input,
+header .lowerHeader nav .searchAndSignin .Search input:focus {
+  width: 150px;
+  outline: none;
+  border: none;
+}
+
+header .lowerHeader nav .searchAndSignin .fa-heart,
+header .lowerHeader nav .searchAndSignin .fa-cart-arrow-down {
+  width: 44px;
+  height: 44px;
+  border: solid 1px black;
+  border-radius: 50%;
+  /* padding: 13px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .lowerHeader nav .searchAndSignin .fa-heart,
+header .lowerHeader nav .searchAndSignin .fa-cart-arrow-down {
+  position: relative;
+}
+
+header .lowerHeader nav .searchAndSignin .fa-heart span,
+header .lowerHeader nav .searchAndSignin .fa-cart-arrow-down span {
+  position: absolute;
+  background-color: #0076ff;
+  font-size: 10px;
+  padding: 4px;
+  border-radius: 50%;
+  color: white;
+  transform: translate(20px, -20px);
+}
+
+header .lowerHeader nav .searchAndSignin button {
+  font-family: helVetica_bold;
+  width: 120px;
+  height: 44px;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #0076ff;
+  color: white;
+}
+
+/* lower headerend  //////////////////////////////////// */
+
+/* Header finsihshed ///////////////////////////////////*/
+
+/* section img :start /////////////////////////////////// */
+
+section {
+  background-image: url(./Assests/Img/category.jpg);
+  background-size: 100% 300px;
+  background-position: 100%;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+main {
+  margin: 100px auto 0 auto;
+  width: 48%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav .nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav ul {
+  padding: 0;
+  flex-grow: 3;
+  list-style: none;
+  display: flex;
+  font-family: helVetica_medium;
+  justify-content: start;
+  align-items: center;
+  /* font-family: kano_regular; */
+}
+
+main nav ul li {
+  margin: 0 1.2rem;
+}
+
+main nav .Sortby {
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+main nav .Sortby select {
+  border: none;
+}
+
+main hr {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+main .product_list {
+  /* flex-grow: 0.7; */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+main .product_list .product {
+  /* background-color: red;  */
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .product_list .product img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+main .product_list .product_description {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .product_list .product_description .price-desc {
+  width: 120px;
+  display: flex;
+  font-family: helVetica_medium;
+  justify-content: space-between;
+  align-items: center;
+}
+main .product_list .product_description span span:last-child {
+  color: red;
+  display: block;
+}
+
+main .product_list .product_description span span:last-child::after {
+  content: "";
+  background-color: red;
+  width: 100%;
+  display: block;
+  height: 2px;
+  transform: translateY(-550%);
+}
+
+main .product_list .product_1::before,
+main .product_list .product_3::before,
+main .product_list .product_6::before {
+  content: "new";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  width: 50px;
+  height: 20px;
+  border-radius: 15px 15px 15px 15px;
+  z-index: 3;
+  transform: translate(-180%, -700%);
+}
